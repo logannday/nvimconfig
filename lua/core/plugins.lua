@@ -12,7 +12,6 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 local plugins = {
-   'wbthomason/packer.nvim',
    'ellisonleao/gruvbox.nvim',
    'nvim-tree/nvim-tree.lua',
    'nvim-tree/nvim-web-devicons',
@@ -34,10 +33,12 @@ local plugins = {
    'L3MON4D3/LuaSnip',
    'saadparwaiz1/cmp_luasnip',
    "rafamadriz/friendly-snippets",
-   
+   --vim tmux navigator:
+   'christoomey/vim-tmux-navigator',
    --colorscheme
-   "rose-pine/neovim"
-   
+   "rose-pine/neovim",
+   --gc to comment visual regions
+    { 'numToStr/Comment.nvim', opts = {} },
  }
 
    
